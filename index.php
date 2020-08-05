@@ -1,6 +1,6 @@
 <?php
 
-$token = "c2hhMjU2Ojc0MDo0YzEyYWFkMTJjOWI4MjU1NTE2OTdjYzY0NGI1OTZlYTM0Yjk2ZjhjYWU1Y2M0YWJlMjhmZGRmOTExYTIzMjM3";
+$token = "c2hhMjU2Ojc0MDphOWZiODViNTk5YTQxYzkxYTZlNTkxZTkxNTQ5M2VmMDIyYTYyNGYwYWZhMGYwMWFjNGY2ZDcwMWM3NzNiMWI2";
 $url   = "https://joomla4.javimata.com/api/index.php/v1/content/article";
 
 $ch = curl_init($url);
