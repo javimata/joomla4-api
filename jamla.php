@@ -2,7 +2,7 @@
 
 include_once "inc/jamla.php";
 
-$token        = "c2hhMjU2Ojc0MDphOWZiODViNTk5YTQxYzkxYTZlNTkxZTkxNTQ5M2VmMDIyYTYyNGYwYWZhMGYwMWFjNGY2ZDcwMWM3NzNiMWI2";
+$token        = "";
 $url          = "joomla4.javimata.com";
 $api_part     = "/api/index.php/v1/";
 $api_endpoint = "content/article";
