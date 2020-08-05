@@ -1,0 +1,203 @@
+{
+	"info": {
+		"_postman_id": "a08cc4d5-c34f-4180-8054-3e23091bafcb",
+		"name": "Joomla 4 API - Token - Javi Mata",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Menus",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{TOKEN}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_path}}/api/index.php/v1/menus/site",
+					"host": [
+						"{{base_path}}"
+					],
+					"path": [
+						"api",
+						"index.php",
+						"v1",
+						"menus",
+						"site"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Menu Items",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "c2hhMjU2Ojc0MDo0YzEyYWFkMTJjOWI4MjU1NTE2OTdjYzY0NGI1OTZlYTM0Yjk2ZjhjYWU1Y2M0YWJlMjhmZGRmOTExYTIzMjM3",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_path}}/api/index.php/v1/menus/site/items",
+					"host": [
+						"{{base_path}}"
+					],
+					"path": [
+						"api",
+						"index.php",
+						"v1",
+						"menus",
+						"site",
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Menu Single Item",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "c2hhMjU2Ojc0MDo0YzEyYWFkMTJjOWI4MjU1NTE2OTdjYzY0NGI1OTZlYTM0Yjk2ZjhjYWU1Y2M0YWJlMjhmZGRmOTExYTIzMjM3",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_path}}/api/index.php/v1/menus/site/items/101",
+					"host": [
+						"{{base_path}}"
+					],
+					"path": [
+						"api",
+						"index.php",
+						"v1",
+						"menus",
+						"site",
+						"items",
+						"101"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Categories",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "c2hhMjU2Ojc0MDo0YzEyYWFkMTJjOWI4MjU1NTE2OTdjYzY0NGI1OTZlYTM0Yjk2ZjhjYWU1Y2M0YWJlMjhmZGRmOTExYTIzMjM3",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_path}}/api/index.php/v1/content/categories",
+					"host": [
+						"{{base_path}}"
+					],
+					"path": [
+						"api",
+						"index.php",
+						"v1",
+						"content",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Articles",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "c2hhMjU2Ojc0MDo0YzEyYWFkMTJjOWI4MjU1NTE2OTdjYzY0NGI1OTZlYTM0Yjk2ZjhjYWU1Y2M0YWJlMjhmZGRmOTExYTIzMjM3",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_path}}/api/index.php/v1/content/article",
+					"host": [
+						"{{base_path}}"
+					],
+					"path": [
+						"api",
+						"index.php",
+						"v1",
+						"content",
+						"article"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Article",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "c2hhMjU2Ojc0MDo0YzEyYWFkMTJjOWI4MjU1NTE2OTdjYzY0NGI1OTZlYTM0Yjk2ZjhjYWU1Y2M0YWJlMjhmZGRmOTExYTIzMjM3",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"alias\": \"Article alias\",\n    \"articletext\": \"Este artículo lo creamos con la API de Joomla 4\",\n    \"catid\": 8,\n    \"language\": \"*\",\n    \"metadesc\": \"\",\n    \"metakey\": \"\",\n    \"title\": \"Artículo de Prueba\",\n    \"state\": 1\n}"
+				},
+				"url": {
+					"raw": "{{base_path}}/api/index.php/v1/content/article",
+					"host": [
+						"{{base_path}}"
+					],
+					"path": [
+						"api",
+						"index.php",
+						"v1",
+						"content",
+						"article"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

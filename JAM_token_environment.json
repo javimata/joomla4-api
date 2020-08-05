@@ -1,0 +1,19 @@
+{
+	"id": "4d6fe4d1-03dc-4c5d-959a-15bf771f61cb",
+	"name": "Joomla 4 TOKEN - JAM Demo",
+	"values": [
+		{
+			"key": "base_path",
+			"value": "localhost/joomla4",
+			"enabled": true
+		},
+		{
+			"key": "TOKEN",
+			"value": "token",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2020-08-04T03:33:14.848Z",
+	"_postman_exported_using": "Postman/7.29.1"
+}
