@@ -27,4 +27,5 @@ $articles = json_decode($data);
 foreach ($articles->data as $key => $value) {
     // print_r($value);
     echo $value->attributes->title . "<br>";
+    echo $value->attributes->text . "<hr>";
 }
